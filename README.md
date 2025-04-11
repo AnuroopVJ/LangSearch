@@ -4,7 +4,7 @@ LangSearch is a Python-based application that leverages the Langchain library al
 ### DEMO: (https://langsearch.streamlit.app/)
 
 <div align="center">
-  <img src="GIF.gif" width="1920" height="750">
+  <img src="GIF.gif" width="300" height="170">
 </div>
 
 
