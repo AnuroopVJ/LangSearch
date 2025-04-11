@@ -40,7 +40,7 @@ def scrape_website(url, max_chars=2000):
 # Function to summarize content using Groq LLM
 def summarize_with_groq(content):
     response = groq_client.chat.completions.create(
-        model="llama3-8b-8192",  # Replace with your model name if different
+        model="llama-3.1-8b-instant",  # Replace with your model name if different
         messages=[{"role": "user", "content": f"Summarize the following content:\n\n{content}"}]
     )
     return response.choices[0].message.content
