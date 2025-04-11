@@ -11,7 +11,7 @@ from urllib.parse import urlparse
 load_dotenv()
 
 # Initialize the Groq API client with the API key
-groq_api_key = os.environ.get("GROQ_API_KEY")  # Ensure your .env file contains the GROQ_API_KEY
+groq_api_key = st.secrets["GROQ_API_KEY"] # Ensure your .env file contains the GROQ_API_KEY
 groq_client = groq.Groq(api_key=groq_api_key)
 
 # Function to perform web search using DuckDuckGo
